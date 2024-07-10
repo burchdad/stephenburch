@@ -1,0 +1,12 @@
+title: INNOVATION TECH PORTFOLIO
+email: Burchsl4@gmail.com
+description: Showcasing my software engineering skills and projects
+logo: /assets/images/logo-placeholder.png
+banner: /assets/images/banner-placeholder.png
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+exclude:
+  - admin.html
