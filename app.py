@@ -13,7 +13,7 @@ bcrypt = Bcrypt(app)
 POSTS_DIR = '_posts'
 
 # Replace this with a hashed password stored in an environment variable
-hashed_password = os.getenv('HASHED_PASSWORD')
+hashed_password = os.getenv('password')
 
 @app.route('/')
 def home():
