@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, session, jsonify
-from flask_bcrypt import Bcrypt # type: ignore
-from dotenv import load_dotenv # type: ignore
+from flask_bcrypt import Bcrypt
+from dotenv import load_dotenv
 import os
 
 # Load environment variables from .env file
