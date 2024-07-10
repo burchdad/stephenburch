@@ -32,4 +32,4 @@ EXPOSE 4000
 EXPOSE 5000
 
 # Start the Jekyll server and Flask application
-CMD ["sh", "-c", ". /srv/jekyll/venv/bin/activate && bundle exec jekyll serve --host 0.0.0.0 & /srv/jekyll/venv/bin/gunicorn --bind 0.0.0.0:5000 app:app"]
+CMD ["sh", "-c", "/srv/jekyll/venv/bin/gunicorn --bind 0.0.0.0:$PORT app:app & bundle exec jekyll serve --host 0.0.0.0 --port 4000"]
