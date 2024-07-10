@@ -5,7 +5,7 @@ FROM ruby:3.1
 RUN apt-get update && \
     apt-get install -y build-essential curl python3 python3-venv && \
     curl https://sh.rustup.rs -sSf | sh -s -- -y && \
-    . $HOME/.cargo/env && \
+    $HOME/.cargo/env && \
     rustup default stable && \
     apt-get clean
 
